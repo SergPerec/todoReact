@@ -1,7 +1,8 @@
 
 function App() {
   return (
-    <div>hello world</div>
+    <div>hello world</div>;
+    <p>may name is Serg</p>;
   )
 }
 
