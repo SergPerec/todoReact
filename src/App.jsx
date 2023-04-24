@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import TodoBlock from './components/TodoBlock';
+import BlockTodo from './components/BlockTodo';
 import './App.css';
 
 function App() {
@@ -28,22 +28,22 @@ function App() {
 
   return (
     <div className="container">
-      <div className="section">
-        <TodoBlock
+      <div className="section-todo">
+        <BlockTodo
           addTodo={addTodo}
           deleteTodo={deleteTodo}
           todos={todos}
           changeStatus={changeStatus}
-          title="HIGH"
+          title="Высокий приоритет"
           priority="high"
         />
-        <TodoBlock
+        <BlockTodo
           addTodo={addTodo}
           deleteTodo={deleteTodo}
           todos={todos}
           changeStatus={changeStatus}
-          title="LOV"
-          priority="lov"
+          title="Низкий приоритет"
+          priority="low"
         />
       </div>
     </div>
